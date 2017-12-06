@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background-image: url('images/flower.jpg');
+  background-color: black;
 }
 
 #thetop{
@@ -183,6 +184,12 @@ h2{
     bottom: -410px;
     right: 135px;
   }
+}
+
+#loading{
+  display: none;
+  position: fixed;
+  left: 0;
 }
 
 #top_column {
