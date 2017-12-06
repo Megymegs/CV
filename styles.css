@@ -287,7 +287,6 @@ progress{
 }
 
 .portfolio_Columns{
-  width: 48%;
   margin: 1%;
 }
 
@@ -295,7 +294,7 @@ progress{
   display: grid;
   grid-template-rows: repeat(3,1fr);
   grid-template-columns: repeat(4,1fr);
-  height: 100%;
+  width: 100%;
   grid-gap: 1vw;
   grid-template-areas: "image1 image2 image3 image4"
                 " image5 image6 image7 image8 "
@@ -306,7 +305,7 @@ progress{
   display: grid;
   grid-template-rows: repeat(2,1fr);
   grid-template-columns: repeat(2,1fr);
-  height: 100%;
+  width: 100%;
   grid-gap: 1vw;
   grid-template-areas: "Proj1 Proj2"
                 "Proj3 Proj4";
