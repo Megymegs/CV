@@ -5,6 +5,14 @@ body {
   background-color: black;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Courgette;
+}
+
+p, li{
+  font-family: Kurale;
+}
+
 #thetop{
   margin: 0 5%;
 }
@@ -70,17 +78,16 @@ h2{
 }
 
 #welcome {
-  font-size: 30px;
-  color: black;
-  opacity: 0;
+  font-size: 26px;
+  color: white;
 }
 
 #welcomePara {
   opacity: 0;
-  color: black;
+  color: white;
 }
 
-#head:hover #WelcomePara {
+#thetop:hover #WelcomePara {
   -webkit-transition: 3s ease-in-out;
   transition: 2.5s ease-in-out;
   opacity: 1;
@@ -238,6 +245,11 @@ nav li{
   padding:2% 0;
   float:left;
   font-size:24px;
+}
+
+nav a{
+  color: black;
+  text-shadow: 1px 1px white;
 }
 
 ul {
