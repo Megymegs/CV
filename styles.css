@@ -291,6 +291,23 @@ progress{
   padding-top:10%;
 }
 
+
+.edu{
+  width: 46%;
+  margin: 2%;
+  float: left;
+}
+
+.edu li{
+  list-style-type: none;
+  text-align: left;
+}
+
+#bottomColumn{
+  clear: both;
+  width: 100%;
+}
+
 #experience li{
   width: 30%;
   display:inline-block;
