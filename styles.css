@@ -6,11 +6,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Courgette;
+  font-family: Lato, sans-serif;
 }
 
 p, li{
-  font-family: Kurale;
+  font-family: Merriweather, serif;
 }
 
 #thetop{
@@ -298,8 +298,8 @@ progress{
 
 
 .edu{
-  width: 46%;
   margin: 2%;
+  margin-top: 0;
   float: left;
 }
 
@@ -308,7 +308,29 @@ progress{
   text-align: left;
 }
 
+#slides {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding-top: 1%;
+    margin: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+#slides li{
+  width: 100%;
+  margin: 0;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+
 #bottomColumn{
+  padding: 2%;
   clear: both;
   width: 100%;
 }
