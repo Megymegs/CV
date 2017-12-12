@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Lato, sans-serif;
 }
 
+h3{
+  font-size: 24px;
+}
+
 p, li{
   font-family: Merriweather, serif;
 }
@@ -310,7 +314,7 @@ progress{
 
 #slides {
     position: relative;
-    width: 100%;
+    width: 200%;
     height: 120px;
     padding-top: 1%;
     margin: 0px;
