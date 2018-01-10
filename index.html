@@ -12,21 +12,21 @@
 
     <section id="thetop">
       <div id="head">
-      	<h1 id="welcome" style="margin-top: 1px; margin-bottom: 1px;">Welcome</h1>
-        <p id="welcomePara1">Please hover over image</p>
-        <p id="welcomePara2">Please select one to read more</p>
-        <h1 id="head_main"><big>Megan Meyer</big><br><span>Web Designer</span>
-        </h1>
         <div id="holder">
           <div id="overlay">
-            <a href="#aboutSec"><h2 id="head_top_left">About</h2></a>
+            <a href="#top_column"><h2 id="head_top_left">About</h2></a>
             <a href="#skillsSec"><h2 id="head_bottom_left">Skills</h2></a>
-            <a href="#educationSec"><h2 id="head_top_right">Tutorage</h2></a>
+            <a href="#educationSec"><h2 id="head_top_right">Education</h2></a>
             <a href="#workSec"><h2 id="head_bottom_right">Careers</h2></a>
             <a href="#portfolioSec"><h2 id="head_bottom">Portfolio</h2></a>
           </div>
-          <img src="images/ProfMe.jpg" alt="Photo of Megan Meyer" height="100%" width="60%" id="mainImg">
         </div>
+      	<h1 id="welcome" style="margin-top: 1px; margin-bottom: 1px;">Welcome</h1>
+        <p id="welcomePara1">Please hover over image</p>
+        <p id="welcomePara2">Please select one to read more</p>
+        <h1 id="head_main"><big>Megan Meyer</big><br><span>Junior Web Developer</span>
+        </h1>
+        <img src="images/ProfMe.jpg" alt="Photo of Megan Meyer" height="100%" width="60%" id="mainImg">
       </div>
 
       <div>
@@ -37,17 +37,17 @@
       	<nav>
           <ul>
             <a href="javascript:history.go(0)"><li><i class="fa fa-home" aria-hidden="true"></i></li></a>
-            <a href="#about"><li id="Nav1">About</li></a>
-            <a href="#skills"><li id="Nav2">Education</li></a>
+            <a href="#top_column"><li id="Nav1">About</li></a>
+            <a href="#education"><li id="Nav2">Education</li></a>
             <a href="#skills"><li id="Nav3">Skills</li></a>
-            <a href="#portfolio"><li id="Nav4">Portfolio</li></a>
-            <a href="#Contact"><li id="Nav5">Contact</li></a>
+            <a href="#work"><li id="Nav4">Work Experience</li></a>
+            <a href="#portfolio"><li id="Nav5">Portfolio</li></a>
+            <a href="#Contact"><li id="Nav6">Contact</li></a>
           </ul>
         </nav>
         <div id="top_column" >
           <div class="rightColumn">
           <h3 id="about">
-          <ins  id="aboutSec">Uniquely Me</ins>
           </h3>
           <p>I am a hard-working creative individual with local as well as international experience in the working world in different career paths. I am punctual and pride myself in meeting deadlines, I work well under pressure and I am able to work within a team as well as on my own on tasks and projects.</p>
           <p>As an individual I bring logical and innovative thinking, I work systemically to ensure the task at hand is completed on time. I have strong attention to detail and the abilty to remain calm within a stressful enviroment.</p>
@@ -84,7 +84,6 @@
               <ins id="skillsSec">Skills Gained</ins>
             </h3>
             <ul id="slides">
-              <li class="slide"><img src="images/Drivers.png" height="70%" width="100%"></li>
               <li class="slide"><img src="images/Word.png" height="70%" width="100%"></li>
               <li class="slide"><img src="images/outlook.png" height="70%" width="100%"></li>
               <li class="slide"><img src="images/excel.png" height="70%" width="100%"></li>
@@ -180,15 +179,46 @@
             <h3 id="contact">
               <ins>Contact</ins>
             </h3>
-            <form action="mailto:megymegs@gmail.com"method="post" enctype="text/plain">
-            <p>Full Name:<br>
-            <input type="text" name="Name"></p>
-            <p>Email Address:<br>
-            <input type="email" name="Email Address"></p>
-            <p>Message:</p>
-            <textarea rows="18%" cols="64%" name="Message"></textarea>
-            <br>
-            <input type="submit" value="Submit" style="width: 30%; height: 30px; margin-top: 2%;">
+            <form name="contactForm" method="post" action="form_email.php" enctype="text/plain">
+              <table>
+                <tr>
+                  <td valign="top">
+                    <label for="first_name">First Name</label>
+                  </td>
+                  <td valign="top">
+                    <input type="text" name="first_name" maxlength="30" size="50">
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <label for="last_name">Last Name</label>
+                  </td>
+                  <td valign="top">
+                    <input type="text" name="last_name" maxlength="30" size="50">
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <label for="email">Email Address</label>
+                  </td>
+                  <td valign="top">
+                    <input type="text" name="email" maxlength="80" size="50">
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <label for="message">Message</label>
+                  </td>
+                  <td>
+                    <textarea name="message" maxlength="1000" cols="52" rows="8"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align:center">
+                    <input type="submit" value="Submit" style="width: 40%; margin-left: 24%; height: 24px;">
+                  </td>
+                </tr>
+              </table>
             </form>
             <div id="info">
               <p>Megan Meyer</p>
