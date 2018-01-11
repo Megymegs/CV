@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['email'])){
+if (isset($_GET['email'])){
   $email_to = "megymegs@gmail.com";
   $email_subject = "Contacting regarding Web Dev";
 
@@ -11,17 +11,17 @@ if (isset($_POST['email'])){
     die();
   }
 
-  if (!isset($_POST['first_name']) ||
-  !isset($_POST['last_name']) ||
-  !isset($_POST['email']) ||
-  !isset($_POST['message'])){
+  if (!isset($_GET['first_name']) ||
+  !isset($_GET['last_name']) ||
+  !isset($_GET['email']) ||
+  !isset($_GET['message'])){
     died("Unfortunately you missed something");
   }
 
-  $first_name = $_POST['first_name']; //required
-  $last_name = $_POST['last_name']; //required
-  $email = $_POST['email']; //required
-  $message = $_POST['message']; //required
+  $first_name = $_GET['first_name']; //required
+  $last_name = $_GET['last_name']; //required
+  $email = $_GET['email']; //required
+  $message = $_GET['message']; //required
 
   $error_message = "";
   $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-09.-]+\.[A-Za-z]{2,4}$/';
